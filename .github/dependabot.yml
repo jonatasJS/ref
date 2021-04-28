@@ -1,0 +1,21 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: marked
+    versions:
+    - 1.2.8
+    - 1.2.9
+    - 2.0.0
+    - 2.0.1
+    - 2.0.2
+  - dependency-name: highlight.js
+    versions:
+    - 10.5.0
+    - 10.6.0
+    - 10.7.0
+    - 10.7.1
